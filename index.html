@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reverse Word</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        body {
+            background-image: url(./imges/796832.jpg);
+        }
+
+        .background {
+            width: 80%;
+            margin: 0px auto;
+            background-color: white;
+            opacity: 0.9;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="background">
+        <h1 class="text-center mt-5 text-success p-2">Text You Are Funny Word</h1>
+        <section class="container ">
+            <div class="row mt-5 mx-auto">
+                <div class="col-6 p-5">
+                    <textarea name="input-text" id="input-text" cols="60" rows="10"
+                        placeholder="text your message"></textarea><br>
+                    <button class="btn btn-primary mt-2" id="submit">Covert</button>
+                </div>
+                <div class="col-6 p-5">
+                    <textarea name="output-text" id="output-text" cols="60" rows="10"
+                        placeholder="your input text reverse" disabled></textarea>
+                    <button id="copy" class="btn btn-warning mt-2">Copy</button>
+                    <button onclick="location.reload()" class="btn btn-danger mt-2">Clear</button>
+                </div>
+            </div>
+        </section>
+        <script src="./js/main.js"></script>
+    </main>
+</body>
+
+</html>
